@@ -2,29 +2,25 @@
 <testng-results skipped="0" failed="2" ignored="0" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="1804" started-at="2020-03-03T08:49:45Z" finished-at="2020-03-03T08:49:47Z">
+  <suite name="Suite" duration-ms="6368" started-at="2020-03-03T10:39:07Z" finished-at="2020-03-03T10:39:13Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="1804" started-at="2020-03-03T08:49:45Z" finished-at="2020-03-03T08:49:47Z">
+    <test name="Test" duration-ms="6368" started-at="2020-03-03T10:39:07Z" finished-at="2020-03-03T10:39:13Z">
       <class name="com.jbk.Testcase2">
-        <test-method status="PASS" signature="checkTitle()[pri:0, instance:com.jbk.Testcase2@3ffc5af1]" name="checkTitle" duration-ms="11" started-at="2020-03-03T08:49:46Z" finished-at="2020-03-03T08:49:46Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkTitle -->
-        <test-method status="FAIL" signature="checkUsersTitle()[pri:0, instance:com.jbk.Testcase2@3ffc5af1]" name="checkUsersTitle" duration-ms="1048" started-at="2020-03-03T08:49:46Z" finished-at="2020-03-03T08:49:47Z">
+        <test-method status="FAIL" signature="checkUsersTitle()[pri:0, instance:com.jbk.Testcase2@3ffc5af1]" name="checkUsersTitle" duration-ms="66" started-at="2020-03-03T10:39:08Z" finished-at="2020-03-03T10:39:08Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [] but found [JavaByKiran | User]]]>
+              <![CDATA[expected [] but found [Facebook helps you connect and share with the people in your life.]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [] but found [JavaByKiran | User]
+              <![CDATA[java.lang.AssertionError: expected [] but found [Facebook helps you connect and share with the people in your life.]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at com.jbk.Testcase2.checkUsersTitle(Testcase2.java:30)
+at com.jbk.Testcase2.checkUsersTitle(Testcase2.java:32)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -56,30 +52,34 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUsersTitle -->
+        <test-method status="PASS" signature="checkTitle()[pri:1, instance:com.jbk.Testcase2@3ffc5af1]" name="checkTitle" duration-ms="4943" started-at="2020-03-03T10:39:08Z" finished-at="2020-03-03T10:39:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTitle -->
       </class> <!-- com.jbk.Testcase2 -->
       <class name="com.jbk.Testcase1">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.jbk.Testcase1@29774679]" name="setup" is-config="true" duration-ms="16642" started-at="2020-03-03T08:48:10Z" finished-at="2020-03-03T08:48:27Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.jbk.Testcase1@29774679]" name="setup" is-config="true" duration-ms="21736" started-at="2020-03-03T10:38:24Z" finished-at="2020-03-03T10:38:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.jbk.Testcase2@3ffc5af1]" name="setup" is-config="true" duration-ms="77913" started-at="2020-03-03T08:48:27Z" finished-at="2020-03-03T08:49:45Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.jbk.Testcase2@3ffc5af1]" name="setup" is-config="true" duration-ms="21084" started-at="2020-03-03T10:38:45Z" finished-at="2020-03-03T10:39:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="FAIL" signature="checklogIn()[pri:0, instance:com.jbk.Testcase1@29774679]" name="checklogIn" duration-ms="564" started-at="2020-03-03T08:49:45Z" finished-at="2020-03-03T08:49:46Z">
+        <test-method status="FAIL" signature="checklogIn()[pri:0, instance:com.jbk.Testcase1@29774679]" name="checklogIn" duration-ms="832" started-at="2020-03-03T10:39:07Z" finished-at="2020-03-03T10:39:08Z">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [error] but found [Please enter email as kiran@gmail.com]]]>
+              <![CDATA[expected [error] but found [Create an account]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [error] but found [Please enter email as kiran@gmail.com]
+              <![CDATA[java.lang.AssertionError: expected [error] but found [Create an account]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
 at org.testng.Assert.assertEqualsImpl(Assert.java:137)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at com.jbk.Testcase1.checklogIn(Testcase1.java:32)
+at com.jbk.Testcase1.checklogIn(Testcase1.java:29)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -111,15 +111,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checklogIn -->
-        <test-method status="PASS" signature="checktitle()[pri:0, instance:com.jbk.Testcase1@29774679]" name="checktitle" duration-ms="12" started-at="2020-03-03T08:49:46Z" finished-at="2020-03-03T08:49:46Z">
+        <test-method status="PASS" signature="checktitle()[pri:0, instance:com.jbk.Testcase1@29774679]" name="checktitle" duration-ms="17" started-at="2020-03-03T10:39:08Z" finished-at="2020-03-03T10:39:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checktitle -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.jbk.Testcase1@29774679]" name="close" is-config="true" duration-ms="407" started-at="2020-03-03T08:49:47Z" finished-at="2020-03-03T08:49:47Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.jbk.Testcase1@29774679]" name="close" is-config="true" duration-ms="383" started-at="2020-03-03T10:39:14Z" finished-at="2020-03-03T10:39:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->
-        <test-method status="PASS" signature="close()[pri:0, instance:com.jbk.Testcase2@3ffc5af1]" name="close" is-config="true" duration-ms="433" started-at="2020-03-03T08:49:47Z" finished-at="2020-03-03T08:49:48Z">
+        <test-method status="PASS" signature="close()[pri:0, instance:com.jbk.Testcase2@3ffc5af1]" name="close" is-config="true" duration-ms="1087" started-at="2020-03-03T10:39:14Z" finished-at="2020-03-03T10:39:15Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- close -->

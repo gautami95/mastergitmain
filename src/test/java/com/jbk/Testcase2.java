@@ -2,6 +2,7 @@ package com.jbk;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
@@ -16,18 +17,19 @@ public static WebDriver driver;
 	public void setup(){
 		System.setProperty("webdriver.chrome.driver", "chromedriver78.exe");
 		driver = new ChromeDriver();
-		driver.get("file:///F:/Selenium%20Software/Offline%20Website/pages/examples/dashboard.html");
+		driver.get("https://www.facebook.com/");
 	}
 	
-  @Test
+  @Test(priority=1)
   public void checkTitle() {
-	  Assert.assertEquals(driver.getTitle(), "JavaByKiran | Dashboard");
+	  driver.findElement(By.xpath("//input[@type='email']")).sendKeys("gaubhadane@gmail.com");
+	  driver.findElement(By.xpath("//input[@value='Log In']")).click();
+	  Assert.assertEquals(driver.getTitle(), "Log in to Facebook | Facebook");
   }
   
-  @Test
+  @Test(priority=0)
   public void checkUsersTitle(){
-	  driver.findElement(By.xpath("/html/body/div[1]/aside/section/ul/li[3]/a")).click();
-	  Assert.assertEquals(driver.getTitle(), "");
+	  Assert.assertEquals(driver.findElement(By.xpath("//div[@class='_5iyx']")).getText(), "");
   }
   
   @AfterSuite
